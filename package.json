@@ -1,0 +1,33 @@
+{
+  "name": "yaml2sql",
+  "version": "0.0.1",
+  "description": "SQL command builder. Incremental and immutable.",
+  "keywords": [
+    "sql",
+    "build",
+    "string",
+    "command"
+  ],
+  "homepage": "https://github.com/chbrown/yaml2sql",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chbrown/yaml2sql.git"
+  },
+  "bugs": {
+    "email": "Christopher Brown <io@henrian.com>",
+    "url": "http://github.com/chbrown/yaml2sql/issues"
+  },
+  "license": "MIT",
+  "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
+  "dependencies": {
+    "sqlcmd": "*",
+    "streaming": "*",
+    "js-yaml": "*",
+    "optimist": "*"
+  },
+  "bin": {
+    "yaml2sql": "yaml2sql"
+  }
+}
+
+
