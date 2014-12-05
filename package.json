@@ -1,6 +1,6 @@
 {
   "name": "yaml2sql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SQL command builder. Incremental and immutable.",
   "keywords": [
     "sql",
@@ -28,5 +28,3 @@
     "yaml2sql": "yaml2sql"
   }
 }
-
-
