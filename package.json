@@ -20,10 +20,9 @@
   "license": "MIT",
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
   "dependencies": {
-    "sqlcmd": "*",
-    "streaming": "*",
     "js-yaml": "*",
-    "optimist": "*"
+    "optimist": "*",
+    "sqlcmd": "*"
   },
   "bin": {
     "yaml2sql": "yaml2sql"
