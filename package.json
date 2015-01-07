@@ -1,7 +1,7 @@
 {
   "name": "yaml2sql",
   "version": "0.0.2",
-  "description": "SQL command builder. Incremental and immutable.",
+  "description": "Convert fixtures yaml to SQL commands",
   "keywords": [
     "sql",
     "build",
@@ -22,7 +22,7 @@
   "dependencies": {
     "js-yaml": "*",
     "optimist": "*",
-    "sqlcmd": "*"
+    "sqlcmd-sql": "~0.0.2"
   },
   "bin": {
     "yaml2sql": "yaml2sql"

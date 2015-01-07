@@ -1,10 +1,14 @@
 /*jslint node: true */
 var fs = require('fs');
-var Insert = require('sqlcmd/commands/insert').Insert;
 var js_yaml = require('js-yaml');
 
+var db = require('sqlcmd-sql');
+
+/** yaml2sql(yaml_string)
+
+Take a YAML string or Buffer, return a string of newline-separated SQL statements.
+*/
 module.exports = function(yaml) {
-  /** Take a YAML string or Buffer, return a string of newline-separated SQL statements */
   var sql_statements = [];
 
   var data = js_yaml.safeLoad(yaml);
@@ -14,8 +18,10 @@ module.exports = function(yaml) {
 
     var rows = data[table];
     rows.forEach(function(row) {
-      var insert_statement = new Insert(table).set(row).toUnsafeSQL().replace(/\s+RETURNING \*/, ';');
-      sql_statements.push(insert_statement);
+      db.Insert(table).set(row).execute(function(err, result) {
+        if (err) throw err;
+        sql_statements.push(result[0] + ';');
+      });
     });
   });
 

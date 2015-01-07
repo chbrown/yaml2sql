@@ -28,4 +28,4 @@ This is handy if you have a yaml file with table names as keys, where each table
 
 ## License
 
-Copyright 2014 Christopher Brown. [MIT Licensed](http://opensource.org/licenses/MIT).
+Copyright 2014-2015 Christopher Brown. [MIT Licensed](http://opensource.org/licenses/MIT).
