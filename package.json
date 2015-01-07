@@ -1,6 +1,6 @@
 {
   "name": "yaml2sql",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Convert fixtures yaml to SQL commands",
   "keywords": [
     "sql",
